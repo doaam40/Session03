@@ -119,9 +119,18 @@ namespace Session03_AssignmentC_
             #endregion
 
             #region Q16
-            for (int i = 0; i < books.Length; i++) {
-                if (books[i] == "Refactoring")
-                    break;
+            //for (int i = 0; i < books.Length; i++) {
+            //    if (books[i] == "Refactoring")
+            //        break;
+            //    Console.WriteLine($"{i + 1}. {books[i]}");
+            //}
+            #endregion
+
+            #region Q17
+            for (int i = 0; i < books.Length; i++)
+            {
+                if (books[i] == "The Pragmatic Programmer")
+                    continue;
                 Console.WriteLine($"{i + 1}. {books[i]}");
             }
             #endregion

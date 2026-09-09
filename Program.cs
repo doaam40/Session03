@@ -26,6 +26,11 @@ namespace Session03_AssignmentC_
             stringBuilder.Append(" - Updated");
             Console.WriteLine(stringBuilder);
             #endregion
+
+            #region Q4
+            stringBuilder.Replace("Book List", "Library");
+            Console.WriteLine(stringBuilder);
+            #endregion
         }
     }
 }

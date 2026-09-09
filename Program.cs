@@ -1,4 +1,5 @@
 ﻿using System.Security.Cryptography.X509Certificates;
+using System.Text;
 
 namespace Session03_AssignmentC_
 {
@@ -14,9 +15,16 @@ namespace Session03_AssignmentC_
             #endregion
 
             #region Q2
-            string string1 = "Clean Code";
-            string string2 = "Clean Code";
-            Console.WriteLine(object.ReferenceEquals(string1, string2));
+            //string string1 = "Clean Code";
+            //string string2 = "Clean Code";
+            //Console.WriteLine(object.ReferenceEquals(string1, string2));
+            #endregion
+
+            #region Q3
+            StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.Append("Book List");
+            stringBuilder.Append(" - Updated");
+            Console.WriteLine(stringBuilder);
             #endregion
         }
     }

@@ -113,8 +113,16 @@ namespace Session03_AssignmentC_
             #endregion
 
             #region Q15
-            foreach (string book in books) { 
-                Console.WriteLine(book);
+            //foreach (string book in books) { 
+            //    Console.WriteLine(book);
+            //}
+            #endregion
+
+            #region Q16
+            for (int i = 0; i < books.Length; i++) {
+                if (books[i] == "Refactoring")
+                    break;
+                Console.WriteLine($"{i + 1}. {books[i]}");
             }
             #endregion
         }

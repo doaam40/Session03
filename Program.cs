@@ -1,4 +1,5 @@
-﻿using System.Security.Cryptography.X509Certificates;
+﻿using System.Globalization;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
 namespace Session03_AssignmentC_
@@ -21,15 +22,22 @@ namespace Session03_AssignmentC_
             #endregion
 
             #region Q3
-            StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder.Append("Book List");
-            stringBuilder.Append(" - Updated");
-            Console.WriteLine(stringBuilder);
+            //StringBuilder stringBuilder = new StringBuilder();
+            //stringBuilder.Append("Book List");
+            //stringBuilder.Append(" - Updated");
+            //Console.WriteLine(stringBuilder);
             #endregion
 
             #region Q4
-            stringBuilder.Replace("Book List", "Library");
-            Console.WriteLine(stringBuilder);
+            //stringBuilder.Replace("Book List", "Library");
+            //Console.WriteLine(stringBuilder);
+            #endregion
+
+            #region Q5
+            string title = "Clean Code";
+            int pages = 464;
+            String sentence = "Book: " + title + ", Pages: " + pages;
+            Console.WriteLine(sentence);
             #endregion
         }
     }

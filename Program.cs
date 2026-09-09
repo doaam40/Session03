@@ -34,20 +34,28 @@ namespace Session03_AssignmentC_
             #endregion
 
             #region Q5
-            string title = "Clean Code";
-            int pages = 464;
-            String sentence = "Book: " + title + ", Pages: " + pages;
-            Console.WriteLine(sentence);
+            //string title = "Clean Code";
+            //int pages = 464;
+            //String sentence = "Book: " + title + ", Pages: " + pages;
+            //Console.WriteLine(sentence);
             #endregion
 
             #region Q6
-            string sentence2 = $"Book: {title}, Pages: {pages}";
-            Console.WriteLine(sentence2);
+            //string sentence2 = $"Book: {title}, Pages: {pages}";
+            //Console.WriteLine(sentence2);
             #endregion
 
             #region Q7
-            string sentence3 = string.Format("Book: {0}, Pages: {1}", title, pages);
-            Console.WriteLine(sentence3);
+            //string sentence3 = string.Format("Book: {0}, Pages: {1}", title, pages);
+            //Console.WriteLine(sentence3);
+            #endregion
+
+            #region Q8
+            int pages = 464;
+            if (pages > 300)
+                Console.WriteLine("Long Book");
+            else
+                Console.WriteLine("Short Book");
             #endregion
         }
     }

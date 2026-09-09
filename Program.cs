@@ -88,7 +88,7 @@ namespace Session03_AssignmentC_
             #endregion
 
             #region Q12
-            //string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+            string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
             //for (int i = 0; i < books.Length; i++)
             //{
             //    Console.WriteLine($"{i+1}. {books[i]}");
@@ -104,12 +104,18 @@ namespace Session03_AssignmentC_
             #endregion
 
             #region Q14
-            int i = 0;
-            do
-            {
-                Console.WriteLine("Checking book...");
-                i++;
-            } while (i < 3);
+            //int i = 0;
+            //do
+            //{
+            //    Console.WriteLine("Checking book...");
+            //    i++;
+            //} while (i < 3);
+            #endregion
+
+            #region Q15
+            foreach (string book in books) { 
+                Console.WriteLine(book);
+            }
             #endregion
         }
     }

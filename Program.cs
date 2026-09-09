@@ -39,6 +39,11 @@ namespace Session03_AssignmentC_
             String sentence = "Book: " + title + ", Pages: " + pages;
             Console.WriteLine(sentence);
             #endregion
+
+            #region Q6
+            string sentence2 = $"Book: {title}, Pages: {pages}";
+            Console.WriteLine(sentence2);
+            #endregion
         }
     }
 }

@@ -127,11 +127,23 @@ namespace Session03_AssignmentC_
             #endregion
 
             #region Q17
-            for (int i = 0; i < books.Length; i++)
+            //for (int i = 0; i < books.Length; i++)
+            //{
+            //    if (books[i] == "The Pragmatic Programmer")
+            //        continue;
+            //    Console.WriteLine($"{i + 1}. {books[i]}");
+            //}
+            #endregion
+
+            #region Q18
+            PrintFirstBook(books);
+
+            void PrintFirstBook(string[] array)
             {
-                if (books[i] == "The Pragmatic Programmer")
-                    continue;
-                Console.WriteLine($"{i + 1}. {books[i]}");
+                if (array.Length == 0)
+                    return;
+                else
+                    Console.WriteLine($"1. {array[0]}");
             }
             #endregion
         }
